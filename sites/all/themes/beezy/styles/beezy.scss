@@ -28,6 +28,10 @@ a{
   width: 960px;
 }
 
+#block-block-1{
+  float:right;
+}
+
 /* header section, which should be the same on every page */
 /* except for the front page */
 body.front header #logo{
@@ -45,6 +49,8 @@ header {
       height: 22px;
     }
   }
+
+
   #search-form{
     padding: 5px 0 0 10px;
     input {
@@ -106,7 +112,7 @@ header {
 #block-menu-minimanager{
     background-image: url("../images/primary-links-with-down-arrow-manage.gif");
     background-color: $soft-orange;
-    color:$orange;
+    color:#f9ab17;
     border:1px solid $orange;
     height: 30px;
   }
@@ -181,7 +187,7 @@ header {
 /* this is for the big icons on the front page */
 #block-menu-block-1 {
   float:left;
-  z-index: 99px; /* because the front page picture block is going over this block */
+  width: 23%;
   ul.menu{
     width: 180px;
     clear:left;
@@ -210,7 +216,7 @@ header {
     li.resource-exchange{
       background-position: 50% 91%;
     }
-    li.learning-centre{
+    li.learning-center{
       background-position: 50% 61%;
     }
     li.dreams-accelerator{
@@ -1126,5 +1132,48 @@ body.front {
     a{
       color:$gray;
     }
+  }
+}
+
+.user-picture img{
+  height: 50px;
+  width:50px;
+}
+
+.content .content{
+  margin-top:45px;
+}
+
+/* comment */
+
+article.comment{
+  img{
+    float: right;
+    height: 50px;
+    padding: 10px 10px 0 10px;
+    width: 50px;
+  }
+  
+    background-color: $soft-orange;
+    border:1px solid $orange;
+    border-radius:10px;
+    margin-bottom:10px;
+  
+  .submitted{
+    margin-top:42px;
+    float:right;
+  }
+  .content{
+    clear: both;
+    margin-top: 10px;
+    padding-right: 10px;
+  }
+  ul.links{
+    display:block;
+    a{
+      border:1px solid $orange;
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 3px 6px;
   }
 }

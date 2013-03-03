@@ -77,7 +77,8 @@ body{
 }
 
 .likeabee-block,
-.page-transact-1stparty #main{
+.page-transact-1stparty #main,
+.page-transact-3rdparty #main{
     border: 1px solid $orange;
     border-radius: 6px 6px 6px 6px;
     margin: 26px 0px;
@@ -102,7 +103,8 @@ body{
     }
 }
 
-.page-transact-1stparty #main h1{
+.page-transact-1stparty #main h1,
+ .page-transact-3rdparty #main h1{
     background-color: $soft-orange;
     border-bottom: 1px solid $orange;
     border-radius: 6px 6px 0 0;
@@ -168,7 +170,8 @@ body{
 }
 
 .likeabee-block input#edit-submit.form-submit,
-.page-transact-1stparty input#edit-submit.form-submit{
+.page-transact-1stparty input#edit-submit.form-submit,
+.page-transact-3rdparty input#edit-submit.form-submit{
 	@include button;
 }
 
@@ -228,7 +231,7 @@ body{
 
 
 .node-proposition {
-    ul.links{
+    .right-user-block ul.links{
         background-color: $soft-orange;
         display: block;
         margin: 0;
@@ -241,11 +244,15 @@ body{
             margin-bottom:10px;
         }
     }
-    .user-picture{
+    .right-user-block .user-picture{
         background-color: $soft-orange;
         height: 117px;
-        padding-left: 64px;
+        padding-left: 49px;
         padding-top: 14px;
+        img{
+            width:100px;
+            height: 100px;
+        }
     }
     .field-name-image{
         margin-bottom:24px;

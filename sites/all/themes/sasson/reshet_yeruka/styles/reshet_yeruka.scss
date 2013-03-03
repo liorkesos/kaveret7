@@ -203,6 +203,7 @@ $h2marginbottom=10px;
        li { 
         list-style: none outside none;
         margin-left: 0px; /* RTL */
+        padding-top: 0px;
         
         a {
           text-decoration: none;
@@ -285,9 +286,41 @@ display: none;*/
   .views-slideshow-cycle-main-frame-row {
     width: 100%;
   }
+
   img {
     display: block;
     margin: 0 auto;
+  }
+}
+
+.views-slideshow-controls-bottom {
+  position: absolute;
+  width: 100%;
+  z-index: 200;
+
+  .views-slideshow-controls-text {
+    margin-top: -152px;
+    margin-left: -2px;
+    margin-right: 2px;
+
+    .views-slideshow-controls-text-pause {
+      display: none;
+    }
+    .views-slideshow-controls-text-previous a {
+       float: left; 
+       text-indent: -10000px;
+       background-image: url(../images/nav-left);
+       height: 67px;
+       width: 50px;
+
+    }
+    .views-slideshow-controls-text-next a {
+       float: right; 
+       text-indent: -10000px;
+       background-image: url(../images/nav-right);
+       height: 67px;
+       width: 50px;
+    }
   }
 }
 
@@ -297,6 +330,14 @@ display: none;*/
     padding-top: 5px;
     h2 {
       margin-top: 0px;
+      margin-bottom: 15px;
+    }
+    .content {
+      background: #DFF0F7;
+      padding-left: 30px; /* LTR */
+      padding-right: 6px; /* LTR */  
+      padding-top: 1px;
+      padding-bottom: 1px;
     }
   }
   
@@ -360,6 +401,12 @@ body.front {
     div.region-sidebar-first{
       div.block {
         margin-right: 9%; /* LTR */
+
+        //  sidebar first to follow height of main bar
+        div.second-box-on-sidebar-1 {
+          margin-top: 50px;
+        }
+
         h2 {
           background-color: $lightblue;
           a {

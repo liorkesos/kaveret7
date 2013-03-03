@@ -1,2 +1,13 @@
  @flip {file: "beezy.scss"}
 
+
+/* floating menu*/
+ div#floating ul li {
+    background: url("../images/big-icons.png") no-repeat scroll left 0 / 44px 248px #F0AC00;
+    border-radius: 26px 0 0px 26px;
+  }
+
+#breadcrumb .mafrid {
+    background: url("../images/arrow-adress-rtl.jpg") no-repeat scroll 1px 1px transparent;
+  }
+
